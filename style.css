@@ -1,26 +1,29 @@
 .bigPicture {
     position: absolute;
-    width: 575px;
-    height: 20%;
+    display: flex;
+    width: 576px;
+    height: 194px;
 }
 .littlePicture {
     position: absolute;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
     width: 140px;
-    height: 57px;
-    top: 25.8%;  
-    transform: translateY(5px);
+    height: 57px; 
+    top: 254px;
 }
 .littlePicture:focus,
 .littlePicture:hover {
     opacity: 0.7;
 }
 .focuslittle:focus img {
-    border: 4px solid pink;
-    transform: translateY(2px);
-    transform: translateX(-4px);
+    border: 2px solid pink;
+    transform: translateX(-2px);
 }
 .bordergallery {
-    width: 576px;
+    position: flex;
+    width: 580px;
     height: 262px;
     position: flex;
     border: 3px solid #ff2400;
@@ -32,4 +35,133 @@
     margin-left: -1px;
     margin-top: -1px;
     border: 3px solid #ff2400;
+}
+.message {
+margin-top: 15px;
+margin-bottom: 5px;
+position: relative;
+background-color: #b34ee6;
+border: solid  rgba(196, 0, 0, 0.596) 3px;
+border-style: dashed;
+border-collapse: 1px;
+border-radius: 10px 4px 4px 10px;
+max-width: 250px;
+height: 50px;
+overflow: hidden;
+white-space: normal;
+}
+.message-name {
+    color: 	black;
+    font-size: 13px;
+}
+.message-number {
+    position: relative;
+    top: -67px;
+    left: 75px;
+    color: blue;
+    width: 30px;
+}
+.message-text {
+    font-style: italic;
+    position: relative;
+    top: -10px;
+    left: 6px;
+}
+.button-remove {
+    visibility: hidden;
+    right: 0px;
+    top: 0px;
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    background-color: #3f0061;
+    background-image: url("xmark.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 28px 28px;
+    border: none;
+    border-radius: 50%;
+    user-select: none;
+    touch-action: manipulation;
+    cursor: pointer;
+    font: inherit;
+    font-size: 0;
+}
+.message:hover .button-remove {
+    visibility: visible;
+}
+.message:hover .button-remove,
+.message:focus .button-remove {
+  visibility: visible;
+  outline: none;
+}
+
+.message:focus-within .button-remove {
+    visibility: visible;
+    outline: none;
+}
+input {
+    position: flex;
+    border: 2px solid blue;
+    padding-bottom: 3px;
+    padding-left: 17px;
+    padding-right: -9px;
+}
+.message-input1::placeholder,
+.message-input2::placeholder{
+    color: #cccccc;
+    font-size: 12px;
+}
+input:hover {
+    border-color: #56cf4c;
+    outline: none;
+}
+input:focus {
+    border-color: red;
+    outline: none;
+}
+.message-input1 {
+    border-radius: 15px 0px 0px 15px;
+    width: 100px;
+}
+.message-input2 {
+    border-radius: 0px 15px 15px 0px;
+    width: 50px;
+ }
+ .message-button {
+     position: relative;
+     background-color: rgb(66, 161, 66);
+     border: none;
+     border-radius: 10px;
+     width: 90px;
+     height: 24px;
+     cursor: pointer;
+ }
+ .message-button:focus {
+ outline: none;
+ }
+ .message-amount1 {
+     position: relative;
+     left: 185px;
+     top: -1000px;
+     font-weight: bolder;
+     border: 1px rgba(196, 0, 0, 0.596) solid;
+     height: 9000px;
+     width: 0px;
+ }
+ .message-amount {
+    position: absolute;
+    left: 210px;
+    top: 4px;
+    font-weight: bolder;
+}
+.littleclass {
+    position: absolute;
+    left: 205px;
+    top: 7px;
+    font-size: 10px;
+}
+.hidden {
+    visibility: hidden;
 }
