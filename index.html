@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<a lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Практика</title>
@@ -26,25 +26,61 @@
 </div>
 </div>
 <br>
-<div class="forma">
-<div class="listMessages">
-        
+<br>
+<br>
+<a href="#ads" id="reloadbutton">
+<div class="timer1" href="#ads">
+        <div class="closetimer hidden">
+                <p class="closetimertext">Обновить таймер?</p>
+        </div>
 </div>
-<form class="form" action="file:///C:/Users/WokBlaster/Desktop/learnJS/index.html#">
-<input type="text" class="message-input1" placeholder="Название" required>
-<input type="number" class="message-input2" placeholder="к.шт." required>
-<button type="submit" class="message-button">Добавить</button>
+</a>
+<div class="timer">
+</div>
+<div class="coolcharacter">
+<img src="intelect.png" style="width:45px; position: absolute; left: 205px; z-index: 3; top: 385px;" class="intelect hidden">
+<img src="intelect.png" style="width:45px; position: absolute; left: 205px; z-index: 3; top: 435px;" class="intelect hidden">
+<img src="intelect.png" style="width:45px; position: absolute; left: 205px; z-index: 3; top: 485px;" class="intelect hidden">
+<img src="power.png" style="width:45px; position: absolute; left: 355px; z-index: 3; top: 385px;" class="power hidden">
+<img src="power.png" style="width:45px; position: absolute; left: 355px; z-index: 3; top: 435px;" class="power hidden">
+<img src="power.png" style="width:45px; position: absolute; left: 355px; z-index: 3; top: 485px;" class="power hidden">
+<img src="character.png" style="width: 150px; position: absolute; left: 230px;" class="character">
+
+        <input type="range" class="charactersizescroll" min="1" max="3" value="2"> <p class="sizecharacter psize">Размер: -</p>
+        <input type="range" class="characterintelectscroll" min="1" max="3" value="2"> <p class="intelectcharacter psize">Интелект: -</p>
+        <input type="range" class="characterpowerscroll" min="1" max="3" value="2"> <p class="powercharacter psize">Сила: -</p>
+</div>
+<br>
+<br>
+<form action="#2">
+        <select>
+                <option value="1" selected>Имя</option>
+                <option value="2">Возраст</option>
+                <option value="3">Семейное п.</option>
+        </select>
 </form>
-<template id="template">
-<div class="message">
-<span class="message-name">Сообщение <span style="color:blue">#</span></span>
-<p class="message-text"></p>
-<button class="button-remove" type="button"></button>
-<p class="message-number"></p>
-<p class="message-amount"></p>
-<div class="message-amount1"></div>
-</div>
-</template>
-</div>
+<br>
+<br>
+<div class="forma">
+        <div class="listMessages">
+                
+        </div>
+        <form class="form" action="file:///C:/Users/WokBlaster/Desktop/learnJS/index.html#">
+        <input type="text" class="message-input1" placeholder="Название" required>
+        <input type="number" class="message-input2" placeholder="к.шт." required>
+        <button type="submit" class="message-button">Добавить</button>
+        </form>
+        <template id="template">
+        <div class="message">
+        <span class="message-name">Сообщение <span style="color:blue">#</span></span>
+        <p class="message-text"></p>
+        <button class="button-remove" type="button"></button>
+        <p class="message-number"></p>
+        <p class="message-amount"></p>
+        <div class="message-amount1"></div>
+        </div>
+        </template>
+        </div>
+        </a>
     <script src="script.js"></script>
 </body>

@@ -1,3 +1,11 @@
+body {
+    background-color: #232927;
+    background-size: 100px 100px;
+    background-image: linear-gradient(90deg, #5a4e39 50%, transparent 50%, transparent);
+}
+p {
+    text-shadow: 1.5px 1.5px 1.5px rgb(0, 0, 0);
+}
 .bigPicture {
     position: absolute;
     display: flex;
@@ -27,6 +35,7 @@
     height: 262px;
     position: flex;
     border: 3px solid #ff2400;
+    background-color: rgb(255, 255, 255);
 }
 .bordergallery1 {
     width: 576px;
@@ -164,4 +173,128 @@ input:focus {
 }
 .hidden {
     visibility: hidden;
+}
+.timer {
+    left: 51%;
+    top: 36px;
+    position: absolute;
+    font-family: FRANKLIN GOTHIC MEDIUM;
+    color: rgb(204, 6, 187);
+    font-size: 30px;
+    font-weight: bolder;
+    font-stretch: extra-expanded;
+    border: dashed 2px rgb(204, 6, 187);
+    padding: 5px;
+}
+.closetimer {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100px;
+    height: 60px;
+    background-size: 40px;
+    background-color: #3f0061;
+}
+.closetimertext {
+    text-align: center;
+    font-family: FRANKLIN GOTHIC MEDIUM;
+    color: rgb(204, 6, 187);
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    top: -5px;
+}
+.timer1 {
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    width: 100px;
+    height: 60px;
+    z-index: 1;
+}
+.timer1:hover .closetimer {
+visibility: visible !important;
+}
+.top {
+    margin-top: -300px !important;
+}
+
+input[type=range] {
+    position: flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-appearance: none;
+    padding: 0px;
+}
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    box-shadow: 1px 1px 1px #030000, 0px 0px 1px #0d0d0d;
+    border: 1px solid #0a0101;
+    height: 24px;
+    width: 11px;
+    border-radius: 3px;
+    background: #842cad;
+    cursor: pointer;
+}
+.psize {
+    font-family: FRANKLIN GOTHIC MEDIUM;
+    font-size: 18px;
+    color: rgb(165, 1, 165);
+    margin: 2px;
+    outline: none;
+    user-select: none;
+}
+.charactersmall {
+     width: 80px !important;
+}
+.characterbig {
+    width: 200px !important;
+}
+.smallintelect {
+    width: 24px !important;
+}
+.bigintelect {
+    width: 56px !important;
+}
+.a1 {
+    top: 385px !important;
+}
+.a2 {
+    top: 410px !important;
+}
+.a3 {
+    top: 435px !important;
+}
+.b1 {
+    top: 385px !important;
+}
+.b2 {
+    top: 450px !important;
+}
+.b3 {
+    top: 510px !important;
+}
+.p1 {
+    top: 385px !important;
+    left: 300px !important;
+}
+.p2 {
+    top: 410px !important;
+    left: 300px !important;
+}
+.p3 {
+    top: 435px !important;
+    left: 300px !important;
+}
+.pb1 {
+    top: 385px !important;
+    left: 405px !important;
+}
+.pb2 {
+    top: 450px !important;
+    left: 405px !important;
+}
+.pb3 {
+    top: 510px !important;
+    left: 405px !important;
 }
